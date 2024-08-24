@@ -1,25 +1,20 @@
-let display= document.getElementById('display');
+let display = document.getElementById('display');
 
-function appendNumber(number)
-{
-    display.value+=number;
+function appendNumber(number) {
+    display.value += number;
 
 }
 
-function clearDisplay()
-{
-    display.value='';
+function clearDisplay() {
+    display.value = '';
 }
-function calculator()
-{
-    try
-    {
-        display.value=eval(display.value);
+function calculator() {
+    try {
+        display.value = eval(display.value);
     }
 
-    catch(e)
-    {
-        display.value='Error';
+    catch (e) {
+        display.value = 'Error';
     }
 }
 

@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Two Number - JavaScript</title>
     <script>
-        function addNumbers(){
-            let num1=parseInt(document.getElementById("num1").value);
-            let num2=parseInt(document.getElementById("num2").value);
-            let sum=num1+num2;
-            document.getElementById("result").innerText=`Sum:${sum}`;
+        function addNumbers() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let sum = num1 + num2;
+            document.getElementById("result").innerText = `Sum:${sum}`;
         }
-        function subtraction(){
-            let num1=parseInt(document.getElementById("num1").value);
-            let num2=parseInt(document.getElementById("num2").value);
-            let sum=num1-num2;
-            document.getElementById("result").innerText=`Sum:${sum}`;
+        function subtraction() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let sum = num1 - num2;
+            document.getElementById("result").innerText = `Sum:${sum}`;
         }
-        function multipiction(){
-            let num1=parseInt(document.getElementById("num1").value);
-            let num2=parseInt(document.getElementById("num2").value);
-            let sum=num1*num2;
-            document.getElementById("result").innerText=`Sum:${sum}`;
+        function multipiction() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let sum = num1 * num2;
+            document.getElementById("result").innerText = `Sum:${sum}`;
         }
-        function divison(){
-            let num1=parseInt(document.getElementById("num1").value);
-            let num2=parseInt(document.getElementById("num2").value);
-            let sum=num1/num2;
-            document.getElementById("result").innerText=`Sum:${sum}`;
+        function divison() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let sum = num1 / num2;
+            document.getElementById("result").innerText = `Sum:${sum}`;
         }
     </script>
 </head>
+
 <body>
     <h2> Arithmatic of Two numbers </h2>
     <label for="num1">Number 1:</label>
     <input type="number" id="num1"><br><br>
     <label for="num2">Number 2:</label>
     <input type="number" id="num2"><br><br>
-    
+
     <button onclick="addNumbers()">Addition</button><br><br>
     <button onclick="subtraction()">subtraction</button><br><br>
     <button onclick="multipiction()">multipiction</button><br><br>
@@ -45,4 +47,5 @@
     <p id="result">
 
 </body>
+
 </html>

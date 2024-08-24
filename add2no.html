@@ -1,19 +1,21 @@
 <!--Create a simple web application using HTML and JavaScript that allows users to input two numbers and display the sum of these numbers when a button is clicked-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Two Number - JavaScript</title>
     <script>
-        function addNumbers(){
-            let num1=parseInt(document.getElementById("num1").value);
-            let num2=parseInt(document.getElementById("num2").value);
-            let sum=num1+num2;
-            document.getElementById("result").innerText=`Sum:${sum}`;
+        function addNumbers() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let sum = num1 + num2;
+            document.getElementById("result").innerText = `Sum:${sum}`;
         }
     </script>
 </head>
+
 <body>
     <h2> Add Two numbers </h2>
     <label for="num1">Number 1:</label>
@@ -24,4 +26,5 @@
     <p id="result">
 
 </body>
+
 </html>
