@@ -2,7 +2,7 @@ function processForm() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let age = document.getElementById("age").value;
-    let gender = document.getElementById('input[name="gender"]:checked').value;
+    let gender = document.querySelector('input[name="gender"][checked]').value;
     let country = document.getElementById("country").value;
     let subscribe = document.getElementById("subscribe").checked;
     let comments = document.getElementById("comments").value;
@@ -37,7 +37,7 @@ function processForm() {
     }
 
     //Email validation
-    const emailPattern = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const isValid = email.match(emailPattern);
     if (!isValid) {
         alert("Email is not valid");
