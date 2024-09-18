@@ -61,7 +61,7 @@ function validateForm() {
     let age = document.getElementById("age").value;
     if (name.length < 3 || email == "" || age < 18 || age > 100) {
         return false;
-    }
+    }   
     return true;
 }
 
